@@ -1,6 +1,11 @@
 
 $( document ).ready(function() {
-   $.get('https://api.github.com/users/eashevchenko', function(data) {
-	$('#data').text(JSON.stringify(data));
+
+	$('#userBtn').click(function(event) {
+		event.preventDefault();
+
+		$.get('https://api.github.com/users/eashevchenko', function(data) {
+			$('#data').text(JSON.stringify(data, null, 4););
+		});
 	});
 });
