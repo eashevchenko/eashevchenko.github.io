@@ -5,7 +5,7 @@ $( document ).ready(function() {
 		event.preventDefault();
 
 		$.get('https://api.github.com/users/eashevchenko', function(data) {
-			$('#data').text(JSON.stringify(data, null, 4););
+			$('#data').text(JSON.stringify(data, null, 4));
 		});
 	});
 });
